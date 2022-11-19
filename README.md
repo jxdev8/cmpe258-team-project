@@ -1,7 +1,15 @@
-# cmpe258-team-project
+# Team Info
+
 CMPE-258 Fall 2022 Team Project
 
 
-# Steps to Run
+
+# Description
+
+# Dataset
+
+TODO: LFW link & info
+
+# 
 
 TODO
