@@ -16,7 +16,7 @@ TODO: LFW link & info
 
 1. We recommend running the note book in **Google Colab**。
 
-2. Before running the code, please install MTCNN python package, the command provided in the first bock.
+2. Before running the code, please install MTCNN python package, the command provided in the first block.
 ```sh
 !pip install mtcnn
 ```
