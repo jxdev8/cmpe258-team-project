@@ -23,14 +23,14 @@ TODO: LFW link & info
 
 3. Please authorize the Colab to connect with a Google drive.
 ```sh
-	from google.colab import drive
-	drive.mount('/content/drive')
+from google.colab import drive
+drive.mount('/content/drive')
 ```
 
 4. Set the “basepath” value to your project base directory in the google drive.
 ```sh
-	basepath = '/content/drive/My Drive/cmpe258/lfw' 
-    #This is an example, please substiute it with your own path
+basepath = '/content/drive/My Drive/cmpe258/lfw' 
+#This is an example, please substiute it with your own path
 ```
 5. Put the pre-trained Facenet model weights into ”{basepath}/model“, and the notebook will load the model from this path.
 
