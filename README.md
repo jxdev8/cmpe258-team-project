@@ -33,6 +33,8 @@ computational resources.
 
 ## How to run the notebook #1 for evaluating the Facenet on LFW
 
+**Notebook #1 Filename:** cmpe258-teamproject-notebook1.ipynb
+
 1. We recommend running the notebook in **Google Colab**.
 
 2. Before running the code, please install MTCNN python package, the command provided in the first block.
@@ -58,6 +60,8 @@ basepath = '/content/drive/My Drive/cmpe258/lfw'
 7. The step “Use MTCNN face detector and Facenet embedding to get distance from 400 image pairs” may take hours.  Please be patient and keep the kernel alive until it finished.
 
 ## How to run the notebook #2
+
+**Notebook #2 Filename:** cmpe258-teamproject-notebook2.ipynb
 
 For both parts described below, we recommend running it in **Google Colab**.
 
