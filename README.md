@@ -66,24 +66,37 @@ basepath = '/content/drive/My Drive/cmpe258/lfw'
 For both parts described below, we recommend running it in **Google Colab**.
 
 #### Pre-requisites
-* Create a Google drive directory where LFW dataset will be stored, i.e. `/content/drive/My Drive/lfw`.
-* Upload the LFW dataset into that designated `lfw` directory.
-* Create a separate `working` directory where processed data will be stored, i.e. `/content/drive/My Drive/working`.
-* Create `face_dataset` and `face_query_set` directories for the FaceNet portion of this notebook.
-* Upload the corresponding GitHub images into the `face_dataset` and `face_query_set` directories.
+
+1. Create a Google drive directory where LFW dataset will be stored, i.e. `/content/drive/My Drive/lfw`.
+
+2. Upload the LFW dataset into that designated `lfw` directory.
+
+3. Create a separate `working` directory where processed data will be stored, i.e. `/content/drive/My Drive/working`.
+
+4. Create `face_dataset` and `face_query_set` directories for the FaceNet portion of this notebook.
+
+5. Upload the corresponding GitHub images into the `face_dataset` and `face_query_set` directories.
 
 ### Part 1 - Raw CNN
 
 Follow the execution of each step according to Part 1. It can be seen with the following main steps:
-* Data exploration - dataset distribution across persons, number of unique images, face features using MTCNN, etc.
-* Data preparation - preparing the top 6 persons in LFW for a multi-class classifier into working sub-directories.
-* CNN implementation - defining convolution, max-pooling and flattening layers into neural network with multi-class softmax outputs.
-* Validation and performance evaluation - running through multiple epochs of training, validation of test data, and evaluation of overall performance.
+
+1. Data exploration - dataset distribution across persons, number of unique images, face features using MTCNN, etc.
+
+2. Data preparation - preparing the top 6 persons in LFW for a multi-class classifier into working sub-directories.
+
+3. CNN implementation - defining convolution, max-pooling and flattening layers into neural network with multi-class softmax outputs.
+
+4. Validation and performance evaluation - running through multiple epochs of training, validation of test data, and evaluation of overall performance.
 
 ### Part 2 - FaceNet with Nearest Neighbors
 
 Follow the execution of each step according to Part 2. It can be seen with the following main steps:
-* Load the pre-trained FaceNet model as specified.
-* Build the face database consisting of embedding and label pairs, using the `face_dataset` directory containing additional images to supply FaceNet.
-* Display the original images in `face_dataset` to verify visually how the images look like.
-* Run the 3 separate prediction tests. Each is supplied with a specific image in the `face_query_set` directory, and a prediction is made based on the previously submitted embedding and labels, which applies Nearest Neighbor algorithm to do so.
+
+1. Load the pre-trained FaceNet model as specified.
+
+2. Build the face database consisting of embedding and label pairs, using the `face_dataset` directory containing additional images to supply FaceNet.
+
+3. Display the original images in `face_dataset` to verify visually how the images look like.
+
+4. Run the 3 separate prediction tests. Each is supplied with a specific image in the `face_query_set` directory, and a prediction is made based on the previously submitted embedding and labels, which applies Nearest Neighbor algorithm to do so.
